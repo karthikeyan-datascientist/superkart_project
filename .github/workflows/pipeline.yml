@@ -17,7 +17,7 @@ jobs:
       - name: Register dataset on Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python Files/model/data_register.py
+        run: python Files/model/register_data.py
 
 
   data-prep:
