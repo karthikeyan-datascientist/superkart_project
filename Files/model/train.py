@@ -54,7 +54,8 @@ test_pred = model.predict(Xtest)
 
 print("Train R2:", r2_score(ytrain, train_pred))
 print("Test R2:", r2_score(ytest, test_pred))
-print("Test RMSE:", mean_squared_error(ytest, test_pred, squared=False))
+rmse = mean_squared_error(ytest, test_pred) ** 0.5
+print("Test RMSE:", rmse)
 
 # -----------------------------
 # Save model
